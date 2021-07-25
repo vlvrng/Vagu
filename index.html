@@ -9,13 +9,13 @@
     <meta name="description" content="Experimente produtos de autocuidado Vagu! Somos uma marca de cosméticos 100% ecológica e vegana.">
     <meta name="author" content="Vanessa Andrade">
     <link rel="shortcut icon" href="heart.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
     
-    <header>
+    <header class="section-container background-image">
 
         <img src="imagens/logo.jpeg" alt="Logo Vagu">
         
@@ -31,16 +31,20 @@
                 
     </nav>
 
+    <section>
+            
+        <div style="background-image: url(../Vagu/imagens/capa2.jpg); background-size: cover; height: 480px; padding-top: 80px">
+        </div>
+
+        
+    </section>
 
     <main>
-
-        <img src="imagens/capa.jpg" alt="imagem inicial"/>
-
-        <img src="imagens/black-friday.jpg" alt="imagem inicial"/>
-
+        
         <section>
 
             <h1>Promoções</h1>
+            <br>
 
             <div class="bloco-post" id="div1">
                 <img src="imagens/produto1.jpg" alt="Imagem Creme de Mãos Suave Amêndoa" class="img-post" />
@@ -48,6 +52,7 @@
                 <h3>30ml</h3>
                 <h4>R$ 49,90</h4>
             </div>
+            <br>
 
             <div class="bloco-post" id="div2">
                 <img src="imagens/produto2.jpg" alt="Imagem Creme Corporal Suave Amêndoa" class="img-post" />
@@ -55,6 +60,7 @@
                 <h3>100ml</h3>
                 <h4>R$ 79,90</h4>
             </div>
+            <br>
 
             <div class="bloco-post" id="div3">
                 <img src="imagens/produto3.jpg" alt="Imagem Óleo Corporal Suave Amêndoa" class="img-post" />
@@ -62,6 +68,7 @@
                 <h3>100ml</h3>
                 <h4>R$ 54,90</h4>
             </div>
+            <br>
 
             <div class="bloco-post" id="div4">
                 <img src="imagens/produto4.jpg" alt="Sabonete Líquido Chá Verde" class="img-post" />
@@ -69,6 +76,7 @@
                 <h3>250ml</h3>
                 <h4>R$ 84,90</h4>
             </div>
+            <br>
 
             <div class="bloco-post" id="div5">
                 <img src="imagens/produto5.jpg" alt="Balm Labial Sem Cor" class="img-post">
@@ -76,6 +84,7 @@
                 <h3>4g</h3>
                 <h4>R$ 39,90</h4>
             </div>
+            <br>
 
             <div class="bloco-post" id="div6">
                 <img src="imagens/produto6.jpg" alt="Balm Labial Morango" class="img-post">
@@ -83,23 +92,24 @@
                 <h3>3,5g</h3>
                 <h4>R$ 28,70</h4>
             </div>
+            <br>
 
         </section>
 
-        <form action="#" method="POST">
-            
-           <p>Receba nossas novidades e dicas de skincare</p>
-            <label for="campo1">E-mail</label>
-            <input type="email" email="e-mail" id="campo1"/>
-            
-
-            <input type="submit" value="Enviar">
-
-            <p>Consulte nossa Política de Privacidade</p>
-
-
+        <form action="#" method="POST">      
+            <div class="card-container">
+                <div>
+                    <p>Receba nossas novidades e dicas de skincare</p>
+                    <br>
+                    <input type="text" placeholder="nome">
+                    <input type="text" placeholder="e-mail">
+                    <input type="submit" value="cadastrar">
+                    <br>
+                    <p>Consulte nossa Política de Privacidade</p>
+                </div>
+            </div>
         </form>
-
+        <br>
 
     </main>
     <footer>
@@ -109,4 +119,5 @@
     </footer>
 
 </body>
+<script src="js/script.js"></script>
 </html>
